@@ -9,11 +9,11 @@
 #include <limits.h>
 
 /**
- * struct flags - struct for flags
- * struct modifiers - struct for modifiers
- * struct identifiers - struct for identifiers
+ * struct flags - struct for flags that represent formatting options
+ * @plus: Represents the '+' flag. If 1, it forces a sign (+ or -) to be printed for signed conversions.
+ * @space: Represents the ' ' flag. If 1, a space is used instead of '+' for positive signed conversions.
+ * @hash: Represents the '#' flag. It is used with the o, x, or X conversions to add a 0, 0x, or 0X prefix, respectively.
  */
-
 typedef struct flags
 {
 	int plus;
@@ -21,6 +21,12 @@ typedef struct flags
 	int hash;
 } flag_t;
 
+/**
+ * struct modifiers - struct for modifiers that alter the size or behavior of conversions
+ * @l: Represents the 'l' modifier. It is used with integer conversions to indicate a long integer.
+ * @h: Represents the 'h' modifier. It is used with integer conversions to indicate a short integer.
+ * @width: Represents the width modifier. It specifies the minimum field width for the output.
+ */
 typedef struct modifiers
 {
 	int l;
@@ -28,6 +34,11 @@ typedef struct modifiers
 	int width;
 } mod_t;
 
+/**
+ * struct identifiers - struct for identifiers that map conversion specifiers to corresponding functions
+ * @symbol: The character representing the conversion specifier.
+ * @func: A function pointer to the corresponding conversion function.
+ */
 typedef struct identifiers
 {
 	char symbol;
