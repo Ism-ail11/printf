@@ -8,12 +8,13 @@
 #include <stdio.h>
 #include <limits.h>
 
+
 typedef struct flags
 {
 	int plus;
 	int space;
 	int hash;
-} flag_t;
+} flag_t
 
 typedef struct modifiers
 {

@@ -38,4 +38,3 @@ int _print_address(va_list valist, flag_t *f, mod_t *m)
 
 	return (count);
 }
-

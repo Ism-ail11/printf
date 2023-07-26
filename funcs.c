@@ -39,4 +39,3 @@ int _puts(char *str)
 
 	return (i);
 }
-
