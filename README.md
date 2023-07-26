@@ -1,7 +1,6 @@
 <<<<<<< HEAD
 =======
 
->>>>>>> 8a36033698d15b56e80c3d71b289289d09ddfbf5
 ## Function Files
 
 ### _printf.c
